@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?3qoq20');
+  src:  url('../fonts/icomoon.eot?3qoq20#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?3qoq20') format('truetype'),
+    url('../fonts/icomoon.woff?3qoq20') format('woff'),
+    url('../fonts/icomoon.svg?3qoq20#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-banknote:before {
+  content: "\e900";
+}
+.icon-light:before {
+  content: "\e901";
+}
+.icon-params:before {
+  content: "\e902";
+}
+.icon-stack:before {
+  content: "\e903";
+  color: #fff;
+}
+.icon-star:before {
+  content: "\e904";
+}
+.icon-world:before {
+  content: "\e905";
+}

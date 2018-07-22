@@ -1,0 +1,10 @@
+[2018-07-10 19:43:55] layer "+61 3146 8728, +61 0987 6543": Expected Either a default asset specification or a layer asset specification but "+" found.
+[2018-07-10 19:43:55] layer "support@envato.net": Unsupported extension: net
+[2018-07-10 19:43:55] layer "google+": Expected end of input but "+" found.
+[2018-07-10 19:43:55] layer "+": Expected Either a default asset specification or a layer asset specification but "+" found.
+[2018-07-10 19:43:55] layer "google+": Expected end of input but "+" found.
+[2018-07-10 19:43:55] layer "google+": Expected end of input but "+" found.
+[2018-07-10 19:43:55] layer "google+": Expected end of input but "+" found.
+[2018-07-10 19:43:55] layer "google+": Expected end of input but "+" found.
+[2018-07-10 19:43:55] layer "google+": Expected end of input but "+" found.
+[2018-07-10 19:52:48] layer "slideshow.svg": Duplicate path: slideshow.svg
