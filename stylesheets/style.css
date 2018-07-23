@@ -72,7 +72,62 @@ h3 {
   background-color: #f39c12;
   border-color: #f39c12;
 }
+.btn_submit {
+  border-color: #f39c12;
+  color: #000;
+  font-weight: 600;
+  font-family: "Open Sans", Alial, sans-serif;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
 
+/*FORMS*/
+.form-field {
+  position: relative;
+  margin-bottom: 10px;
+}
+.form-field:nth-child(3) {
+  margin-bottom: 22px;
+}
+.form-field__icon {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  width: 20px;
+  text-align: center;
+  color: #808080;
+  font-size: 16px;
+}
+.form-control {
+  display: block;
+  padding: 0 70px 0 25px;
+  width: 100%;
+  height: 45px;
+  border: 2px solid #d9d9d9;
+  background-color: #fff;
+  color: #808080;
+  font-size: 15px;
+  font-weight: 400;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+.form-control:focus {
+  border-color: #f39c12;
+}
+.form-control:focus + .form-field__icon {
+  color: #f39c12;
+}
+
+textarea.form-control {
+  min-height: 125px;
+  resize: none;
+  padding-top: 10px;
+  font-family: "Open Sans", Alial, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/*HEADER*/
 header {
   position: absolute;
   top: 82px;
@@ -504,8 +559,8 @@ header {
   margin-right: 10px;
   color: #999;
   font-size: 16px;
-  -webkit-transition: all 0s;
-  transition: all 0s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .social__link:hover {
   color: #f39c12;
@@ -700,8 +755,8 @@ header {
   width: 290px;
   overflow: hidden;
   border-radius: 10%;
-  -webkit-box-shadow: 5px 5px 10px rgba(252, 111, 36, 0.5);
-          box-shadow: 5px 5px 10px rgba(252, 111, 36, 0.5);
+  -webkit-box-shadow: 0px 0px 25px 10px rgba(252, 111, 36, 0.5);
+          box-shadow: 0px 0px 25px 10px rgba(252, 111, 36, 0.5);
 }
 .tab-cont__text {
   padding: 15px;
@@ -717,8 +772,145 @@ header {
   text-transform: capitalize;
 }
 
-.test {
+/*CONTACT*/
+.contact-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contact-wrap h6 {
+  margin-bottom: 25px;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.6;
+}
+.contact-wrap p {
+  font-size: 16px;
+  color: #737373;
+  line-height: 1.75;
+}
+.contact-wrap__item {
+  width: 50%;
+}
+.contact-wrap__item_left {
+  margin-right: 60px;
+}
+.contact-list {
+  list-style: none;
+  margin-top: 35px;
+}
+.contact-list__item {
+  position: relative;
+  margin-bottom: 18px;
+  padding-left: 50px;
+  color: #0d0d0d;
+  line-height: 25px;
+  letter-spacing: -0.32px;
+}
+.contact-list__item a {
+  color: #0d0d0d;
+}
+.contact-list__item a:hover {
+  color: #f39c12;
+}
+.contact-list__icon {
+  position: absolute;
+  left: 0;
+  top: -4px;
+  width: 34px;
+  height: 34px;
+  border: 2px solid #f39c12;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.contact-form {
+  padding-top: 8px;
+}
+
+/*MAP*/
+.map-container {
+  margin-top: 100px;
+  position: relative;
+}
+.map-container:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: '';
   display: block;
+  width: 0;
+  height: 0;
+  border-top: 100px solid #fff;
+  border-right: 100vw solid transparent;
+}
+.map-container:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid #fff;
+  border-left: 100vw solid transparent;
+}
+
+/*FOOTER*/
+.footer {
+  margin-top: 30px;
+  padding: 40px 0 30px 0;
+  background: #ededea;
+}
+.footer-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.footer-text {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.footer-text span {
+  display: inline-block;
+}
+.footer-copyright {
+  margin-right: 20px;
+  position: relative;
+}
+.footer-copyright:after {
+  content: '';
+  display: block;
+  width: 2px;
+  height: 20px;
+  background-color: silver;
+  font-size: 14px;
+  position: absolute;
+  top: -2px;
+  left: calc(100% + 10px);
+}
+
+.social__link_footer {
+  color: #000;
 }
 
 /*# sourceMappingURL=style.css.map */
