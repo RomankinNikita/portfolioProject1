@@ -225,6 +225,9 @@ header {
         border-bottom: 100px solid #fff;
         border-left: 100vw solid transparent;
     }
+    &-slider .slick-dots {
+        margin-top: 80px;
+    }
 }
 
 .about {
@@ -263,15 +266,36 @@ header {
     }
 }
 
-.about__wrap {
+.about-wrap {
     display: flex;
+    justify-content: space-between;
     border-bottom: 2px solid rgb(230, 230, 230);
     padding-bottom: 120px;
+    &-slider {
+        width: 450px;
+        height: 300px;
+        position: relative;
+        border: 1px solid #f39c12;
+        border-radius: 5%;
+        overflow: hidden;
+        .slick-dots {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            li {
+                display: block;
+            }
+        }
+    }
     &_content {
         display: flex;
         margin-right: 65px;
         &--nomargin {
             margin-right: 0;
+        }
+        &--50 {
+            width: 50%;
         }
     }
     &_content-icon {
@@ -499,15 +523,15 @@ header {
         &__img {
             width: 200px;
             height: 200px;
-            padding: 5px;
             background: #f2f2f2;
             border: 1px solid #e6e6e6;
             border-radius: 50%;
-            &_photo {
-                width: 100%;
-                height: 100%;
-                background: #e8f8f4;
-                border-radius: 50%;
+            overflow: hidden;
+            img {
+                width: 190px;
+                height: 190px;
+                position: relative;
+                bottom: -10px;
             }
         }
     }
@@ -645,6 +669,36 @@ header {
     &__footer {
         padding: 30px;
         background: #fafafa;
+    }
+}
+
+
+/*portfolio*/
+
+.portfolio-slider {
+    position: relative;
+    border: 1px solid #f39c12;
+    .slick-dots {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translate(0, -50%);
+        li {
+            margin: 5px 0;
+            display: block;
+        }
+    }
+    &__buttons {
+        width: 100px;
+        margin: 50px auto;
+        text-align: center;
+        button {
+            width: 38px;
+            height: 38px;
+            border: 2px solid #e6e6e6;
+            background-color: #fff;
+            margin: 0 4px;
+        }
     }
 }
 
@@ -816,7 +870,7 @@ header {
 .footer {
     margin-top: 30px;
     padding: 40px 0 30px 0;
-    background: #ededea;
+    background: rgba(243, 156, 18, .4);
     &-flex {
         display: flex;
         justify-content: space-between;

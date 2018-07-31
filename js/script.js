@@ -1,35 +1,39 @@
 $(function() {
     var btn = $('.nav-tab-list__btn');
-    var item = $('.nav-tab-list__item');
-    var tab = $('.tab-cont__item');
-    var serg = $('.serega');
-    var sergText = $('.serega__text');
+    var tabContItem = $('.tab-cont__item');
 
     btn.click(function() {
         $(this).parent().addClass('active');
         $(this).parent().siblings().removeClass('active');
-        if ($(this).hasClass('graphic')) {
-            tab.hide();
-            $('[id *= tab_1]').show();
-        } else if ($(this).hasClass('web')) {
-            tab.hide();
-            $('[id *= tab_2]').show();
-        } else if ($(this).hasClass('brand')) {
-            tab.hide();
-            $('[id *= tab_3]').show();
-        } else if ($(this).hasClass('video')) {
-            tab.hide();
-            $('[id *= tab_4]').show();
-        } else if ($(this).hasClass('photo')) {
-            tab.hide();
-            $('[id *= tab_5]').show();
-        } else {
-            tab.show();
-        }
+    });
+
+    $('.tabs button').click(function() {
+        var getId = this.id;
+        var getCurrent = $('.tab-cont .' + getId);
+
+        tabContItem.not(getCurrent).hide(500);
+        getCurrent.show(500);
+    });
+
+    $('#showall').click(function() {
+        tabContItem.show(500);
     });
 
     $('.banner-slider').slick({
         arrows: false,
         dots: true,
     });
+
+    $('.portfolio-slider').slick({
+        dots: true,
+        appendArrows: '.portfolio-slider__buttons',
+        prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
+        nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
+    });
+
+    $('.about-wrap-slider').slick({
+        arrows: false,
+        dots: true,
+    });
+
 });
