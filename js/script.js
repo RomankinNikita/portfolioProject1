@@ -22,6 +22,7 @@ $(function() {
     $('.banner-slider').slick({
         arrows: false,
         dots: true,
+        autoplay: true,
     });
 
     $('.portfolio-slider').slick({
@@ -29,11 +30,33 @@ $(function() {
         appendArrows: '.portfolio-slider__buttons',
         prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
         nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
+        autoplay: true,
     });
 
     $('.about-wrap-slider').slick({
         arrows: false,
         dots: true,
+        autoplay: true,
     });
 
+    var menuBtn = $('.nav__btn');
+    var menu = $('.menu');
+    var menuLink = $('.menu__link');
+
+    menuBtn.click(function() {
+        menuBtn.toggleClass('nav__btn_active');
+        menu.toggleClass('menu--open');
+    });
+
+    menuLink.click(function() {
+        menuBtn.removeClass('nav__btn_active');
+        menu.removeClass('menu--open');
+    });
+
+    $("#box-twenty").twentytwenty({
+        default_offset_pct: .5,
+        no_overlay: true,
+        move_with_handle_only: false,
+        click_to_move: true,
+    });
 });

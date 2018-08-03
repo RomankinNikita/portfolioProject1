@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/icomoon.css">
     <link rel="stylesheet" type="text/css" href="css/all.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/twentytwenty.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="stylesheets/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -21,9 +22,12 @@
         <div class="wrapper">
             <div class="header-wrap">
                 <div class="logo">
-                    <a href="#">Mini</a>
+                    <a href="#">logo</a>
                 </div>
-                <nav class="navigation">
+                <nav class="nav">
+                    <div class="nav__btn">
+                        <span></span>
+                    </div>
                     <ul class="menu">
                         <li class="menu__item">
                             <a href="#" class="menu__link">About</a>
@@ -101,16 +105,19 @@
                         </div>
                     </div>
                     <div class="about-wrap-slider">
-                        <div><img src="img/about__wrap-slider1.jpg" alt="about__wrap-slider"></div>
-                        <div><img src="img/about__wrap-slider2.jpeg" alt="about__wrap-slider"></div>
-                        <div><img src="img/about__wrap-slider3.jpeg" alt="about__wrap-slider"></div>
+                        <div>
+                            <div class="about-wrap-slider__item" style="background-image: url(img/about__wrap-slider1.jpeg);"></div>
+                        </div>
+                        <div>
+                            <div class="about-wrap-slider__item" style="background-image: url(img/about__wrap-slider2.jpeg);"></div>
+                        </div>
+                        <div>
+                            <div class="about-wrap-slider__item" style="background-image: url(img/about__wrap-slider3.jpeg);"></div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="skills">
-                    <div class="skills__img">
-                        <img src="img/macbook-apple-imac-computer-39284.jpeg" alt="iphone">
-                    </div>
                     <div class="skills__item">
                         <div class="about-wrap_content about__wrap_content--nomargin">
                             <div class="about-wrap_content-icon">
@@ -163,6 +170,11 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div id="box-twenty" class="box-twenty">
+                        <img src="img/twenty1.png" />
+                        <img src="img/twenty2.png" />
                     </div>
                 </div>
             </div>
@@ -400,13 +412,19 @@
 
                 <div class="portfolio-slider">
                     <div>
-                        <a href="#"><img src="img/slider__item1.jpeg" alt="slider__item1"></a>
+                        <div class="portfolio-slider__item" style="background-image: url(img/slider__item1.jpeg);">
+                            <a href="#"></a>
+                        </div>
                     </div>
                     <div>
-                        <a href="#"><img src="img/slider__item2.jpeg" alt="slider__item2"></a>
+                        <div class="portfolio-slider__item" style="background-image: url(img/slider__item2.jpeg);">
+                            <a href="#"></a>
+                        </div>
                     </div>
                     <div>
-                        <a href="#"><img src="img/slider__item3.jpeg" alt="slider__item3"></a>
+                        <div class="portfolio-slider__item" style="background-image: url(img/slider__item3.jpeg);">
+                            <a href="#"></a>
+                        </div>
                     </div>
                 </div>
                 <div class="portfolio-slider__buttons"></div>
@@ -622,6 +640,8 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/jquery.event.move.js" type="text/javascript"></script>
+    <script src="js/jquery.twentytwenty.js" type="text/javascript"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
 </body>
