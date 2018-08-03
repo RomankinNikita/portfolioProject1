@@ -872,6 +872,7 @@ header {
             font-size: 16px;
             color: rgb(115, 115, 115);
             line-height: 1.75;
+            text-align: justify;
         }
         &__item {
             width: 50%;
@@ -969,7 +970,7 @@ header {
     &-copyright {
         margin-right: 20px;
         position: relative;
-        &:after {
+        &::after {
             content: '';
             display: block;
             width: 2px;
